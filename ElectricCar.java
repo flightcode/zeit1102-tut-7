@@ -76,6 +76,7 @@ public class ElectricCar extends Car {
     }
 
     public String toString() {
-        return this.rego + " " + this.colour + " " + this.speed + "km/h " + this.charge + "%";
+        return "Rego: " + this.rego + "\nSpeed: " + this.speed + "\nCharge: " + this.charge + "\nColour: "
+                + this.colour;
     }
 }
