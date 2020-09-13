@@ -4,10 +4,10 @@ public class ElectricCar extends Car {
     private String colour;
     private float charge;
 
-    ElectricCar() {
+    public ElectricCar() {
     }
 
-    ElectricCar(String rego, float speed, String colour, float charge) {
+    public ElectricCar(String rego, float speed, String colour, float charge) {
         this.rego = rego;
         this.speed = speed;
         this.colour = colour;
