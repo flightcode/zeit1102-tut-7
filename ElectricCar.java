@@ -52,4 +52,24 @@ public class ElectricCar {
     public float getCharge() {
         return this.charge;
     }
+
+    public void accelerate(float speed) {
+        if (speed >= 0) {
+            if (speed < this.charge) {
+                this.charge -= speed;
+            } else {
+                this.charge = 0;
+            }
+            this.speed += speed;
+        }
+    }
+
+    public void decelerate(float speed) {
+        if (speed >= 0) {
+            if (this.speed > 0) {
+                this.speed -= speed;
+                this.charge += speed;
+            }
+        }
+    }
 }
