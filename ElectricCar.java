@@ -53,22 +53,22 @@ public class ElectricCar extends Car {
         return this.charge;
     }
 
-    public void accelerate(float speed) {
-        if (speed >= 0) {
+    public void accelerate(float change) {
+        if (change > 0) {
             if (speed < this.charge) {
-                this.charge -= speed;
+                this.charge -= change;
             } else {
                 this.charge = 0;
             }
-            this.speed += speed;
+            this.speed += change;
         }
     }
 
-    public void decelerate(float speed) {
-        if (speed >= 0) {
+    public void decelerate(float change) {
+        if (change > 0) {
             if (this.speed > 0) {
-                this.speed -= speed;
-                this.charge += speed;
+                this.speed -= change;
+                this.charge += change;
             }
         }
     }
