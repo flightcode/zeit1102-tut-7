@@ -47,7 +47,7 @@ public class Car {
 
     public void accelerate(float change) {
         if (change > 0) {
-            this.speed += speed;
+            this.speed += change;
         }
     }
 
