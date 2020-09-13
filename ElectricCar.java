@@ -72,4 +72,8 @@ public class ElectricCar {
             }
         }
     }
+
+    public String toString() {
+        return this.rego + " " + this.colour + " " + this.speed + "km/h " + this.charge + "%";
+    }
 }
