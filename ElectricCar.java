@@ -1,8 +1,8 @@
-public class ElectricCar {
-    String rego;
-    float speed;
-    String colour;
-    float charge;
+public class ElectricCar extends Car {
+    private String rego;
+    private float speed;
+    private String colour;
+    private float charge;
 
     ElectricCar() {
     }
